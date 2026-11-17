@@ -49,7 +49,7 @@ public class ShellSort implements SortAlgorithm {
                     }
                 }
             }
-            h/=3;
+            h = (h-1+1)/3;
         }
     }
 }
