@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * =====================================================================
  *  DAY 3  -  MERGE SORT
@@ -43,5 +45,10 @@ public class MergeSort implements SortAlgorithm {
     public void sort(SortArray arr) {
         // TODO: write merge sort here (add helper methods below)
 
+    }
+    public SortArray merge (SortArray arr1, SortArray arr2){
+         int counter1 = 0;
+         int counter2 = 0;
+         return arr1;
     }
 }
