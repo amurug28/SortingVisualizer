@@ -47,15 +47,15 @@ public class MergeSort implements SortAlgorithm {
         int lo = 0;
         int hi = arr.size()-1;
         Item[] temp = new Item[arr.size()];
-        MergeSort(arr, temp, lo, hi);
+        MergeSortBottom(arr, temp);
 
     }
     private void MergeSort(SortArray arr, Item[] temp, int lo, int hi){
         if (lo == hi) return;
         int mid = (lo + hi)/2;
-        /*MergeSort(arr, temp, lo, mid);
+        MergeSort(arr, temp, lo, mid);
         MergeSort(arr, temp, mid+1, hi);
-        merge(arr, temp, lo, mid, hi);*/
+        merge(arr, temp, lo, mid, hi);
     }
     private void MergeSortBottom(SortArray arr, Item[] temp){
         for (int i = 1; i < arr.size(); i*=2){
